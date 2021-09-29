@@ -16,13 +16,23 @@ first. input : row & col
 second : input array data (only int)
 
 4 4
+
 5 5 5 5
+
 1 2 3 4
+
 3 4 5 6
+
 2 3 5 6
 
+
 4 4
+
 1 2 3 4
+
 5 6 7 8
+
 9 1 4 3
+
 2 4 8 2
+
