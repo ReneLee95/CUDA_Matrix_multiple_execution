@@ -12,7 +12,9 @@ you can execute each other 2-dimension matrix & using 512 thread
 if you want to change the mode (CPU), call void function
 
 ex)
+
 first. input : row & col
+
 second : input array data (only int)
 
 4 4
