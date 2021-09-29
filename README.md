@@ -1,27 +1,28 @@
-HandLine detection(OpenCV Hand detection) & Skeleton Detection
+CUDA C Program - matrix multiple program
 
+OS : Windows10 & LINUX
+language : CUDA -C
+tool : visual-studio
+enviroment : CUDA - 11.3
 
+this program's matrix multiple program.
 
-Using opencv version 4.2 and CUDA version 11.2
+you can execute each other 2-dimension matrix & using 512 thread
 
-Skeleton detection captures the characteristic points of the knuckles and marks them.
+if you want to change the mode (CPU), call void function
 
-![image](https://user-images.githubusercontent.com/42111518/131345438-a43689d2-5cf3-4076-a0e5-b70c15d6b9b2.png)
+ex)
+first. input : row & col
+second : input array data (only int)
 
-![image](https://user-images.githubusercontent.com/42111518/131346527-0d76de5f-fe17-4102-9268-fdf24d640f24.png)
+4 4
+5 5 5 5
+1 2 3 4
+3 4 5 6
+2 3 5 6
 
-
-The base is Mask R CNN. Existing Mask R CNN displays areas, but skeleton detection only displays feature points excluding mask areas.
-
-To use this program, pose_iter_102000.caffemodel and pose_deploy.prototxt are required, and please create a folder called hand and download it.
-
-Skeleton detection is a 2-stack detection, so it takes a lot of delay. However, this program has been further optimized using the GPU to work with Hand Line detection.
-
-It can also be operated in a Linux environment, so please match the path.
-(Env : Windows , Linux)
-
-![6666](https://user-images.githubusercontent.com/42111518/131348135-f9e1f050-709b-496b-887f-110648d170ff.png)
-
-This is a double the efficiency frame improvement over conventional skeleton detection.
-
-Always available when needed for camera-related vision tasks
+4 4
+1 2 3 4
+5 6 7 8
+9 1 4 3
+2 4 8 2
